@@ -3,3 +3,49 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body :first-child{
+    text-align: center;
+}
+
+#pulsante{
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#pulsante:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+ }
+
+#grid{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+.cell{
+    width: calc(100% / 10);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.even{
+    background-color: rgb(5, 140, 202);
+}
+
+.odd{
+    background-color: rgb(9, 187, 24);
+}
