@@ -10,7 +10,8 @@ pulsante.addEventListener("click", function () {
     const cella = document.createElement("div");
     cella.className = "cell";
     cella.innerHTML = i;
-
+    ////////////////////////////////// spostato grid.append(cella) qui
+    grid.append(cella);
     cella.addEventListener("click", function () {
       console.log("stai cliccando sulla cella numero", i);
       const isEven = isNumberEven(i);
@@ -21,7 +22,6 @@ pulsante.addEventListener("click", function () {
         cella.classList.add("odd");
       }
     });
-    grid.append(cella);
 
     cella.addEventListener("dblclick", function () {
       cella.style.backgroundColor = "initial";
