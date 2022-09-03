@@ -21,8 +21,11 @@ pulsante.addEventListener("click", function () {
         cella.classList.add("odd");
       }
     });
-
     grid.append(cella);
+
+    cella.addEventListener("dblclick", function () {
+      cella.style.backgroundColor = "initial";
+    });
   }
 });
 
