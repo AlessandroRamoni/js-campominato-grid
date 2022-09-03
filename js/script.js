@@ -1,4 +1,4 @@
-console.log("Venerdì");
+console.log("Sabato");
 
 const pulsante = document.getElementById("pulsante");
 
@@ -31,4 +31,16 @@ pulsante.addEventListener("click", function () {
 
 function isNumberEven(number) {
   return number % 2 === 0;
+}
+
+const urna = [];
+while (urna.length < 100) {
+  urna.push(getRandomNumber(1, 100));
+  console.log(urna);
+}
+
+function getRandomNumber(min, max) {
+  let range = max - min + 1;
+  let random = Math.floor(Math.random() * range) + min;
+  return random;
 }
