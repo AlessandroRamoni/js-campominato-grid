@@ -6,6 +6,7 @@
 
 body{
     font-family: 'Luckiest Guy', cursive;
+    background-color: rgb(255 99 250);
 }
 
 .container{
@@ -19,7 +20,10 @@ body :first-child{
 
 #pulsante{
     padding: 5px;
-    margin-top: 10px;
+    margin-top: 15px;
+    background-color: yellowgreen;
+    font-size: 20px;
+    border-radius: 10px;
 }
 
 #pulsante:hover{
@@ -31,10 +35,11 @@ body :first-child{
     display: flex;
     flex-wrap: wrap;
     padding-top: 40px;
+    gap: 10px;
 }
 
 .cell{
-    width: calc(100% / 10);
+    width: calc(100% / 10 - 10px);
     height: 100px;
     display: flex;
     align-items: center;
