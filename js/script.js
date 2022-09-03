@@ -14,7 +14,7 @@ pulsante.addEventListener("click", function () {
     grid.append(cella);
     cella.addEventListener("click", function () {
       console.log("stai cliccando sulla cella numero", i);
-      const isEven = isNumberEven(i);
+      let isEven = isNumberEven(i);
 
       if (isEven) {
         cella.classList.add("even");

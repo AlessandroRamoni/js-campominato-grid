@@ -88,9 +88,9 @@ body :first-child{
 }
 
 #pulsante{
-    padding: 5px;
+    padding: 10px;
     margin-top: 15px;
-    background-color: yellowgreen;
+    background-color: rgb(214, 238, 0);
     font-size: 20px;
     border-radius: 10px;
 }
