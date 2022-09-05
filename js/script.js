@@ -33,10 +33,19 @@ function isNumberEven(number) {
   return number % 2 === 0;
 }
 
-const urna = [];
-while (urna.length < 100) {
-  urna.push(getRandomNumber(1, 100));
-  console.log(urna);
+////////////////////////////// DOVE LA METTO?
+function getRandomNumberArray() {
+  const urna = [];
+
+  while (urna.length < 100) {
+    const random = getRandomNumber(1, 100);
+
+    if (!urna.includes(random)) {
+      urna.push(random);
+    }
+    console.log(urna);
+  }
+  return urna;
 }
 
 function getRandomNumber(min, max) {
