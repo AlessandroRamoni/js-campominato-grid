@@ -6,10 +6,12 @@ pulsante.addEventListener("click", function () {
   const grid = document.getElementById("grid");
   grid.innerHTML = "";
 
+  let prova = getRandomNumberArray();
+  console.log(prova);
   for (let i = 1; i < 101; i++) {
     const cella = document.createElement("div");
     cella.className = "cell";
-    cella.innerHTML = i;
+    cella.innerHTML = prova[i - 1];
     ////////////////////////////////// spostato grid.append(cella) qui
     grid.append(cella);
     cella.addEventListener("click", function () {
@@ -43,7 +45,7 @@ function getRandomNumberArray() {
     if (!urna.includes(random)) {
       urna.push(random);
     }
-    console.log(urna);
+    // console.log(urna);
   }
   return urna;
 }
